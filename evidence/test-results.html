@@ -1,0 +1,14 @@
+<!doctype html><meta charset="utf-8"><style>body{margin:32px;background:#101827;color:#e5e7eb;font:16px monospace}pre{white-space:pre-wrap;line-height:1.5}h2{color:#6ee7b7}</style><h2>Cognee UI: local unit/component/route regression tests</h2><pre>NODE_ENV=test npx jest --runInBand --runTestsByPath [four focused suites]
+
+PASS src/modules/config/__tests__/uiBasePath.test.ts
+PASS src/app/api/__tests__/localBackendRoutes.test.ts
+PASS src/ui/layout/__tests__/ProfileMenu.basePath.test.tsx
+PASS src/modules/tenant/__tests__/LocalProvider.basePath.test.tsx
+
+Test Suites: 4 passed, 4 total
+Tests:       43 passed, 43 total
+Snapshots:   0 total
+Time:        1.199 s
+Ran all test suites within paths &quot;src/modules/config/__tests__/uiBasePath.test.ts&quot;, &quot;src/modules/tenant/__tests__/LocalProvider.basePath.test.tsx&quot;, &quot;src/ui/layout/__tests__/ProfileMenu.basePath.test.tsx&quot;, &quot;src/app/api/__tests__/localBackendRoutes.test.ts&quot;.</pre><h2>Production standalone HTTP integration checks</h2><pre>UI HTTP/asset checks passed for /cognee
+UI HTTP/asset checks passed for /
+</pre><p>Both production builds succeeded; no Docker runtime was available locally.</p>
